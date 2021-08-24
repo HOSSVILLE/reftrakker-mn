@@ -15,12 +15,6 @@ import java.io.IOException;
 public class HelloController {
     private static Logger logger = LoggerFactory.getLogger(HelloController.class);
 
-    ApplicationConfig config;
-
-
-    public HelloController(ApplicationConfig config, GoogleSheetsAuthService googleSheetsAuthService) {
-        this.config = config;
-    }
 
     @Get(produces = MediaType.TEXT_PLAIN)
     public String index() throws IOException {
