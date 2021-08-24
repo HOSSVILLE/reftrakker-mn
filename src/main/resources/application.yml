@@ -1,3 +1,7 @@
 micronaut:
   application:
     name: reftrakkerMn
+org:
+  hoss:
+    spreadsheet:
+      id: 10f4E_6B9NBZglLAVaSPqsz--z0jNcZ3ltCOIPwB7EEI

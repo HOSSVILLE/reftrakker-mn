@@ -4,7 +4,7 @@ plugins {
 }
 
 version = "0.1"
-group = "reftrakker.mn"
+group = "org.hoss.mn"
 
 repositories {
     mavenCentral()
@@ -15,7 +15,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("reftrakker.mn.*")
+        annotations("org.hoss.mn.*")
     }
 }
 
@@ -27,11 +27,15 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
 
+    implementation 'com.google.api-client:google-api-client:1.31.5'
+    implementation 'com.google.oauth-client:google-oauth-client-jetty:1.31.4'
+    implementation 'com.google.apis:google-api-services-sheets:v4-rev20210223-1.31.0'
+    implementation 'com.google.api-client:google-api-client-jackson2:1.31.5'
 }
 
 
 application {
-    mainClass.set("reftrakker.mn.Application")
+    mainClass.set("org.hoss.mn.Application")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("16")

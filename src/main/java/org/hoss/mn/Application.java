@@ -1,4 +1,4 @@
-package reftrakker.mn;
+package org.hoss.mn;
 
 import io.micronaut.runtime.Micronaut;
 
